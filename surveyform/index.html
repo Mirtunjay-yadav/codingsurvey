@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="box">
+        <h1>Survey Form</h1>
+        <p>
+            Feel free to answer the questions below based on your own experience and opinion. If you are not comfortable
+            answering a particular question, please skip it by selecting "No". Every answer is appreciated. Thank you for
+            your time.
+        </p>
+        <form>
+            <div>
+                <label for="lname">Your Name</label><br>
+                <input required type="text" name="lname" id="lname" placeholder="Enter your name">
+            </div>
+            <div>
+                <label for="email">Your Email Address</label><br>
+                <input required type="email" name="email" id="email" placeholder="admin@gmail.com">
+            </div>
+            <div>
+                <label for="lphone">Your Phone Number</label><br>
+                <input required type="tel" name="lphone" id="lphone" placeholder="Enter your phone number">
+            </div>
+            <div>
+                <label for="country">Select your country:</label><br>
+                <select id="country" name="country">
+                    <option value="india">India</option>
+                    <option value="Canada">Canada</option>
+                    <option value="UK">United Kingdom</option>
+                    <option value="Australia">Australia</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </div>
+            <div>
+                <label for="age">Enter your age:</label><br>
+                <input type="number" id="age" name="age" min="1" max="120" required>
+                <!-- 'min' and 'max' attributes specify the allowed range -->
+            </div>
+            <div>
+                <label for="rating">How would you rate your proficiency in coding?</label><br>
+                <input type="radio" id="red" name="rating" value="beginner">
+                <label for="red">Beginner</label><br>
+                <input type="radio" id="blue" name="rating" value="intermediate">
+                <label for="blue">Intermediate</label><br>
+                <input type="radio" id="green" name="rating" value="advanced">
+                <label for="green">Advanced</label><br>
+            </div>
+            <div>
+                <label for="yesno">Have you ever appeared in any coding contest?</label><br>
+                <input type="radio" id="yes" name="yesno" value="yes">
+                <label for="yes">Yes</label><br>
+                <input type="radio" id="no" name="yesno" value="no">
+                <label for="no">No</label><br>
+            </div>
+            <div class="form-control">
+                <label for="passion">Discuss what drives your passion for coding and outline your aspirations in the field:</label><br>
+                <!-- Multi-line text input control -->
+                <textarea name="passion" id="passion" placeholder="Enter your comments here"></textarea><br>
+            </div>
+            <div class="form-control">
+                <label for="comment">Any additional comments or suggestions:</label><br>
+                <!-- Multi-line text input control -->
+                <textarea name="comment" id="comment" placeholder="Enter your comments here"></textarea><br>
+            </div>
+            <button type="submit" value="submit">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
